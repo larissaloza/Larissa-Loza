@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEADER -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lineas</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/estilos2.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img-interface/milogo.ico">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script type="text/javascript" src="js/processing.js"></script>
+</head>
+
+<body>
+
+
+    <!-- Menu chico: sm-->
+    <div class="row franja">
+        <ul class="menu-chico d-inline d-md-none col-12">
+
+            <li class="d-inline fs-6 fs-md-5 opcion"> <a class="menu" href="index.html"> Home
+                </a>
+
+            <li class="fs-5 d-inline opcion poste"><small> |</small></li>
+
+            <li class="d-inline fs-6 fs-md-5 opcion"> <a class="menu" id="current" href="work.html"> Work</a>
+
+            <li class="fs-5 d-inline opcion poste"><small> |</small></li>
+
+            <li class=" d-inline fs-6 fs-md-5 opcion"> <a class="menu" href="about-me.html"> About me </a>
+
+            <li class="fs-5 d-inline opcion poste"><small> |</small></li>
+
+            <li class=" d-inline fs-6 fs-md-5 opcion"> <a class="menu" href="https://www.instagram.com/l__loza/"
+                    target="_blank">IG</a>
+
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- Menu grande: md lg xl xxl-->
+    <div class="row franja">
+        <ul class="menu-grande d-none d-md-inline">
+
+            <li class="pe-1 fs-5 fs-md-5 opcion d-inline"> <a class="menu" href="index.html"> Home </a>
+            <li class="fs-5 d-inline opcion poste"><b>| </b></li>
+
+            <li class="pe-1 fs-5 fs-md-5 opcion d-inline"> <a class="menu" id="current" href="work.html"> Work </a>
+
+            <li class="fs-5 d-inline opcion poste"><b>| </b></li>
+
+            <li class="pe-1 fs-5 fs-md-5 opcion d-inline"> <a class="menu" href="about-me.html"> About me</a>
+
+            <li class="fs-5 d-inline opcion poste"><b>| </b></li>
+
+            <li class="pe-1 fs-5 fs-md-5 opcion d-inline"> <a class="menu" href="https://www.instagram.com/l__loza/"
+                    target="_blank">IG</a>
+
+            </li>
+            </li>
+        </ul>
+    </div>
+
+    <div class=" d-inline d-md-none info">
+        <h3 class="text-dark">.... <br> .</h3>
+    </div>
+
+
+
+
+
+    <!-- //////////////////////////////////////////////////////////// -->
+
+    <!-- Lineas -->
+    <section class="row pt-5 pt-md-5 pb-md-0 pb-lg-5 mb-5 justify-content-center">
+
+        <!-- <div class="d-none d-md-inline espacio"> </div> -->
+
+        <div class="contenedor clearfix col-11 col-md-7 col-lg-6 pt-lg-4 pt-xl-5">
+            <div class="float-center">
+                <canvas class="canvas" data-processing-sources="lines.pde"></canvas>
+            </div>
+        </div>
+
+        <!-- TEXTO -->
+        <div class="info  col-11 col-md-9 col-xl-7
+         ps-md-2 ms-md-1 ms-xl-2 pt-3 pt-md-5 pt-lg-4 pt-xl-5 pb-0 ">
+            <h5 style="line-height: 20px;" class="text-start">- LINEAS - </h5>
+            <p style="line-height: 24px;" class="text-start">
+                <small> Digital Interactive Canvas - 2022 <br>
+                    Created with Processing<br><br>
+                    In this interactive artwork, the intersecting lines are meticulously arranged to create a moiré effect, evoking a sense of dynamic movement and optical illusion. The deliberate juxtaposition of strokes against a subdued background serves to intensify the visual impact, drawing the viewer into a dynamic fusion of patterns and shapes. What sets this work apart is its interactivity; viewers can control the movement of lines and visual effects with the mouse, allowing for a personalized exploration of the nuances of the work.<br>
+                    Through the interplay of color, line thickness and spacing, the work invites contemplation of perception and perspective, prompting reflection on the complexities of visual interpretation. By integrating elements of randomness and interactivity, the work offers a fluidity that reflects the changing nature of human perception. <br>
+                    Created in Processing (object-oriented programming language based on Java, for designers and visual artists).</small>
+            </p>
+        </div>
+    </section>
+
+
+    <!-- https://www.youtube.com/watch?v=mgoNOkFGmto  Tuto que segui pARel el carrusel -->
+    <!-- iconos: https://boxicons.com/ -->
+
+    <div class=" col-7 col-md-5 col-lg-4 container-carousel">
+        <div class="carruseles" id="slider">
+
+            <section class="slider-section">
+                <img src="img-interface/lineas/lineas0.png">
+            </section>
+
+            <section class="slider-section">
+                <img src="img-interface/lineas/lineas1.png">
+            </section>
+
+            <section class="slider-section">
+                <img src="img-interface/lineas/lineas2.png">
+            </section>
+
+            <section class="slider-section">
+                <img src="img-interface/lineas/lineas3.png">
+            </section>
+
+            <section class="slider-section">
+                <img src="img-interface/lineas/processing-lineas.jpg">
+            </section>
+
+        </div>
+        <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
+        <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12 d-inline d-md-none  espacio-trampa">
+        </div>
+        <div class="col-12 d-none d-md-inline espacio-trampa">
+        </div>
+        <div class="col-12 d-none d-md-inline espacio-trampa">
+        </div>
+    </div>
+
+
+
+
+    <!-- //////////////////////////////////////////////////////////// -->
+
+    <div class="d-none d-md-inline inner-cursor"></div>
+    <div class="d-none d-md-inline outer-cursor"></div>
+
+    <script src="js/script.js"></script>
+    <script src="css/app.js"></script>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

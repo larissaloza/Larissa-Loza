@@ -1,0 +1,129 @@
+
+
+/* Para pagina de index */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans";
+    cursor: none;
+  }
+  
+  body,html {
+    background-color: rgb(0, 0, 0);
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  .inner-cursor{
+    position: fixed;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width 0.5s height 0.5s;
+    z-index: 2;
+  }
+  
+  .inner-cursor.grow{
+   width: 25px;
+   height: 25px;
+   transition: width 0.5s, height 0.5s; 
+   z-index: 2;
+  }
+  
+  .outer-cursor{
+    position: fixed;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 0.1s ;
+    z-index: 2;
+  }
+  
+  ul.menu-chico {
+    position: fixed;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 0;
+    height: 70px;
+    background-color: black;
+    z-index: 2;
+  }
+  
+  ul.menu-grande {
+    position: fixed;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 0;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+    border-bottom-style: solid;
+    border-color: rgb(20, 20, 20);
+    border-width: .5px;
+  }
+  
+  .franja{
+    position: fixed;
+    padding-right: 12px;
+    padding-left: 12px;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+  /* (Esto no se porque se tiene que hacer. es una trama) */
+  }
+  
+  li.opcion {
+    z-index: 2;
+    /* background-color: aqua; */
+  }
+  
+  li.poste{
+    font-family: Arial;
+      color:deeppink;
+      z-index: 2;
+  }
+  
+  
+  a.menu:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  a.menu:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  a.menu#current {
+    color: rgb(171, 171, 171);
+    text-decoration:none;
+  }
+  
+  a.menu:hover {
+    color: rgb(0, 204, 255);
+    text-decoration: none;
+  }
+  
+  
+/* ///////////////////////////////////////////////////////////////////////// */
+  
+  .puntos {
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    margin-top:0px;
+  }
+  
+  
